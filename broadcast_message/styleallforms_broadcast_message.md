@@ -16,6 +16,7 @@ READ EVENTS
 
 
 **SetAll_Assing procedure**
+
 It's a simply - just modify `SetAll_Assing` procedure...
 ```
 ***************************************************************************
@@ -59,6 +60,7 @@ ENDPROC
 ``` 
 
 **Some form class**
+
 And modify form class...
 ```
 DEFINE CLASS form1 AS form

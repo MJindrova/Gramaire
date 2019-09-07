@@ -2,6 +2,7 @@
 This example shows how to get list of textboxes which are empty value.
 
 **Base broadcast message class**
+
 We need simply broadcast message class with two properties - `uType` and `uResult`. What `u` prefix, because the value type can be string, date, datetime, boolean, number or object.
 ```
 DEFINE CLASS _BroadcastMessage AS CUSTOM
@@ -12,6 +13,7 @@ ENDDEFINE
 ``` 
 
 **Base broadcast message result class**
+
 And we need simply broadcast message result class. OK, not is siply clas, because it has three properties and three methods.
 ```
 DEFINE CLASS _BroadcastMessageResult AS CUSTOM
@@ -52,6 +54,7 @@ ENDDEF
 
 
 **Some result class**
+
 And we create derived broadcast message result class. This class contains only one method which build string for message box.
 ```
 DEFINE CLASS _BMR_MustBeFill AS _BroadcastMessageResult
@@ -75,6 +78,7 @@ ENDDEF
 
 
 **Some textbox class**
+
 Now create derived class from textbox. 
 Property `uBroadcastMessage` is "virtual" and never be set. 
 Property `lIsEmptyAllowed` is flag if vaule can be empty.
@@ -124,6 +128,7 @@ ENDDEF
 
 
 **Some form class**
+
 And form which contains labels, textboxes and command button. 
 Executive code is in event `Click()` on command button. 
 This code create broadcast messsage object, set `uType` property and call `SetAll()` method in form.

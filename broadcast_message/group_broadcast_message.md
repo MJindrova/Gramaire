@@ -37,6 +37,7 @@ CLEAR ALL
 
 
 **Base broadcast message server class**
+
 The big first step is transform `SetAll_Assing` procedure to  regular class.
 ```
 DEFINE CLASS _BroadcastMessageServer AS CUSTOM
@@ -203,6 +204,7 @@ ENDDEFINE
 ``` 
 
 **Base broadcast message class**
+
 New `cGroup` property differentiate forms.
 ```
 DEFINE CLASS _BroadcastMessage AS CUSTOM
@@ -217,6 +219,7 @@ ENDDEF
 
 
 **Some broadcast message class**
+
 Hmm bug in `_BM_LANGUAGE::Set()`  method, a font may not contain glyphs for codepage.
 ```
 DEFINE CLASS _BM_LANGUAGE AS _BroadcastMessage
@@ -250,6 +253,7 @@ ENDDEFINE
 
 
 **Some combobox class**
+
 And change sendind broadcast message.
 ```
 DEFINE CLASS _mycombobox AS COMBOBOX

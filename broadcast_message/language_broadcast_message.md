@@ -101,6 +101,7 @@ ENDDEFINE
 ``` 
 
 **Base broadcast message result class**
+
 Modified methods `Add()` and `Clear()`
 ```
 DEFINE CLASS _BroadcastMessageResult AS CUSTOM
@@ -133,6 +134,7 @@ ENDDEF
 ``` 
 
 **Some broadcast message class**
+
 Class `_BM_LANGUAGE` for settings localized strings in objects. 
 Class `_BM_DEFAULT_TEXT` for settings default text if value is null. 
 ```
@@ -193,6 +195,7 @@ ENDDEFINE
 ``` 
 
 **Some result class**
+
 Class `_BMR_VALIDATEDATA` for gets localized error or warnings strings. 
 ```
 DEFINE CLASS _BMR_VALIDATEDATA AS _BroadcastMessageResult
@@ -218,6 +221,7 @@ ENDDEF
 ``` 
 
 **Some language class**
+
 Class `_LANGUAGE` as source for localized strings.
 ```
 DEFINE CLASS _LANGUAGE AS CUSTOM
@@ -402,6 +406,7 @@ ENDDEF
 ``` 
 
 **Some textbox class**
+
 Class `_mytextbox` supports  empty value validation only.
 ```
 DEFINE CLASS _mytextbox AS TEXTBOX
