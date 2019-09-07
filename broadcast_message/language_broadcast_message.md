@@ -3,6 +3,7 @@
  Wee need more classes: `_Language` as source for localized strings, `_mytextbox`, `_mylabel`, `_mycombobox` etc. 
  Each UI class has property `cLang` which contains value `en-us` or `de-de` etc. 
  And array `aStringID` with three columns.
+
 |Column|Value  |Description|
 |:-----|:------|:----------|
 |1|`Caption`|Property name|
