@@ -3,7 +3,7 @@
 
 
 
-** Main program **
+**Main program**
 ```
 m.loForm=CREATEOBJECT("form1")
 m.loForm.Show()
@@ -15,7 +15,7 @@ READ EVENTS
 ```
 
 
-** SetAll_Assing procedure **
+**SetAll_Assing procedure**
 It's a simply - just modify `SetAll_Assing` procedure...
 ```
 ***************************************************************************
@@ -58,7 +58,7 @@ PROCEDURE SetAll_Assing
 ENDPROC
 ``` 
 
-** Some form class **
+**Some form class**
 And modify form class...
 ```
 DEFINE CLASS form1 AS form

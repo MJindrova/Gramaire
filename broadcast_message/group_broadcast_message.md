@@ -2,7 +2,7 @@
 [Previous example](./language_broadcast_message.md) show how change language and style (`FontName` etc.) for all objects in all forms or toolbars. But how change style on some runned forms? Let's have two "red" forms and tow "blue" forms.
 
 
-** Main program **
+**Main program**
 ```
 LOCAL m.loToolbar, m.loFormRed1, m.loFormBlue1, m.loFormRed2, m.loFormBlue2
 _Screen.AddObject("Lang", "_Language")
@@ -36,7 +36,7 @@ CLEAR ALL
 ```
 
 
-** Base broadcast message server class **
+**Base broadcast message server class**
 The big first step is transform `SetAll_Assing` procedure to  regular class.
 ```
 DEFINE CLASS _BroadcastMessageServer AS CUSTOM
@@ -202,7 +202,7 @@ DEFINE CLASS _BroadcastMessageServer AS CUSTOM
 ENDDEFINE
 ``` 
 
-** Base broadcast message class **
+**Base broadcast message class**
 New `cGroup` property differentiate forms.
 ```
 DEFINE CLASS _BroadcastMessage AS CUSTOM
@@ -216,7 +216,7 @@ ENDDEF
 ``` 
 
 
-** Some broadcast message class **
+**Some broadcast message class**
 Hmm bug in `_BM_LANGUAGE::Set()`  method, a font may not contain glyphs for codepage.
 ```
 DEFINE CLASS _BM_LANGUAGE AS _BroadcastMessage
@@ -249,7 +249,7 @@ ENDDEFINE
 ``` 
 
 
-** Some combobox class **
+**Some combobox class**
 And change sendind broadcast message.
 ```
 DEFINE CLASS _mycombobox AS COMBOBOX
@@ -274,7 +274,7 @@ DEFINE CLASS _mycombobox AS COMBOBOX
 ENDDEF
 ```
 
-** Some command button class **
+**Some command button class**
 ```
 DEFINE CLASS _mystylecommandbutton AS _mycommandbutton
    *...
@@ -314,7 +314,7 @@ ENDDEF
 ```
 
 
-** Some form class **
+**Some form class**
 ```
 DEFINE CLASS _MyForm AS form
 
@@ -365,4 +365,4 @@ DEFINE CLASS _MyForm AS form
 ENDDEFINE
 ``` 
 
-[Full example](./src/language_broadcast_message.prg)
+[Full example](./src/group_broadcast_message.prg)

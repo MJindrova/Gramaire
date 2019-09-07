@@ -11,7 +11,7 @@
 |3|`MyCaption(m.lcString)`|Callback method. This method will be call before property set. Variable `m.lcString` contains localized string.|
 
 
-** Main program **
+**Main program**
 ```
 LOCAL m.loToolbar, m.loFormRed1, m.loFormBlue1
 _Screen.AddObject("Lang", "_LANGUAGE")
@@ -34,7 +34,7 @@ CLEAR ALL
 ```
 
 
-** SetAll_Assing procedure **
+**SetAll_Assing procedure**
 ```
 ***************************************************************************
 * SetAll + Assign 
@@ -83,7 +83,7 @@ PROCEDURE SetAll_Assing
 ENDPROC
 ``` 
 
-** Base broadcast message class **
+**Base broadcast message class**
 New method `Set()` - template only.
 ```
 DEFINE CLASS _BroadcastMessage AS CUSTOM
@@ -100,7 +100,7 @@ DEFINE CLASS _BroadcastMessage AS CUSTOM
 ENDDEFINE
 ``` 
 
-** Base broadcast message result class **
+**Base broadcast message result class**
 Modified methods `Add()` and `Clear()`
 ```
 DEFINE CLASS _BroadcastMessageResult AS CUSTOM
@@ -132,7 +132,7 @@ DEFINE CLASS _BroadcastMessageResult AS CUSTOM
 ENDDEF
 ``` 
 
-** Some broadcast message class **
+**Some broadcast message class**
 Class `_BM_LANGUAGE` for settings localized strings in objects. 
 Class `_BM_DEFAULT_TEXT` for settings default text if value is null. 
 ```
@@ -192,7 +192,7 @@ DEFINE CLASS _BM_DEFAULT_TEXT AS _BroadcastMessage
 ENDDEFINE
 ``` 
 
-** Some result class **
+**Some result class**
 Class `_BMR_VALIDATEDATA` for gets localized error or warnings strings. 
 ```
 DEFINE CLASS _BMR_VALIDATEDATA AS _BroadcastMessageResult
@@ -217,7 +217,7 @@ DEFINE CLASS _BMR_VALIDATEDATA AS _BroadcastMessageResult
 ENDDEF
 ``` 
 
-** Some language class **
+**Some language class**
 Class `_LANGUAGE` as source for localized strings.
 ```
 DEFINE CLASS _LANGUAGE AS CUSTOM
@@ -401,7 +401,7 @@ DEFINE CLASS _LANGUAGE AS CUSTOM
 ENDDEF
 ``` 
 
-** Some textbox class **
+**Some textbox class**
 Class `_mytextbox` supports  empty value validation only.
 ```
 DEFINE CLASS _mytextbox AS TEXTBOX
@@ -540,7 +540,7 @@ DEFINE CLASS _mytextbox AS TEXTBOX
 ENDDEF
 ``` 
 
-** Some label class **
+**Some label class**
 ```
 DEFINE CLASS _mylabel AS LABEL
    Name="_mylabel"
@@ -587,7 +587,7 @@ DEFINE CLASS _mylabel AS LABEL
 ENDDEF
 ``` 
 
-** Some combobox class **
+**Some combobox class**
 ```
 DEFINE CLASS _mycombobox AS COMBOBOX
    Name="_mycombobox"
@@ -717,7 +717,7 @@ DEFINE CLASS _mylngcombobox AS _mycombobox
 ENDDEF
 ``` 
 
-** Some command button class **
+**Some command button class**
 ```
 DEFINE CLASS _mycommandbutton AS COMMANDBUTTON
    Name="_mycommandbutton"
@@ -762,7 +762,7 @@ DEFINE CLASS _mycommandbutton AS COMMANDBUTTON
 ENDDEF
 ``` 
 
-** Some toolbar class **
+**Some toolbar class**
 ```
 DEFINE CLASS _MyToolbar AS TOOLBAR
    DoCreate = .T.
@@ -830,7 +830,7 @@ DEFINE CLASS _MyToolbar AS TOOLBAR
 ENDDEF
 ``` 
 
-** Some form class **
+**Some form class**
 ```
 DEFINE CLASS _MyForm AS form
    DoCreate = .T.

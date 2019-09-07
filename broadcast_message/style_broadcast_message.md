@@ -1,7 +1,7 @@
 # Style Broadcast Message
 This example shows how set style of labels, textboxes and command buttons on form.
 
-** Some broadcast message class **
+**Some broadcast message class**
 First step is create broadcast message style class. Properties Font\* are use for setings.
 ```
 DEFINE CLASS _BM_Style AS _BroadcastMessage
@@ -43,7 +43,7 @@ DEFINE CLASS _BM_Style AS _BroadcastMessage
 ENDDEF
 ``` 
 
-** Some textbox class **
+**Some textbox class**
 Second step is create derived textbox class. But in the case, `uBroadcastMessage_ASSIGN` method process `STYLE` message.
 ```
 DEFINE CLASS _mytextbox AS textbox
@@ -78,7 +78,7 @@ DEFINE CLASS _mytextbox AS textbox
 ENDDEF
 ``` 
 
-** Some label class **
+**Some label class**
 Third step is create derived label class. `uBroadcastMessage_ASSIGN` method is equal to method for derived textbox class.
 ```
 DEFINE CLASS _mylabel AS label
@@ -114,7 +114,7 @@ DEFINE CLASS _mylabel AS label
 ENDDEF
 ``` 
 
-** Some command button class **
+**Some command button class**
 Fourth step is create derived command button class. `uBroadcastMessage_ASSIGN` method is equal to method for derived textbox class.
 ```
 DEFINE CLASS _mycommandbutton AS commandbutton
@@ -150,7 +150,7 @@ DEFINE CLASS _mycommandbutton AS commandbutton
 ENDDEF
 ``` 
 
-** Some form class **
+**Some form class**
 And last step is create form class. Command button "cmdFirstStyle" set font to "Tahoma Bold",10 and command button "cmdSecondStyle" set font to "Times New Romand Italic",11.
 ```
 DEFINE CLASS form1 AS form
@@ -252,4 +252,4 @@ DEFINE CLASS form1 AS form
 ENDDEFINE
 ``` 
 
-[Full example](./src/style_broadcast_message.prg)
+[Full example](./src/style_broadcast_message.PRG)

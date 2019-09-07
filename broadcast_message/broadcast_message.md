@@ -3,9 +3,9 @@
 What is Broadcast Message? Hmm, it's a way, how send message to one or more recipients and process result.
  Recipient can be form, toolbar, textbox, label or `_Screen` object. 
 
-How is realize it? It's a combination of calls SetAll() method and _Assign method.
- If you don't know what is SetAll method, please read topic "SetAll Method" in VFP help (5.0. 6.0, 7.0, 8.0, 9.0).
- If you don't know what is _Assign method, please read topic "Access and Assign Methods" in VFP help (6.0, 7.0, 8.0, 9.0).
+How is realize it? It's a combination of calls `SetAll()` method and `_Assign` method.
+ If you don't know what is `SetAll()` method, please read topic "SetAll Method" in VFP help (5.0. 6.0, 7.0, 8.0, 9.0).
+ If you don't know what is `_Assign` method, please read topic "Access and Assign Methods" in VFP help (6.0, 7.0, 8.0, 9.0).
 
 ## How create it
 It's a very simply. 
@@ -48,4 +48,5 @@ Microsoft Visual FoxPro
 3. [Style Broadcast Message - form](./stylef_broadcast_message.md)
 4. [Style Broadcast Message - all forms](./styleallforms_broadcast_message.md)
 5. [Language Broadcast Message](./language_broadcast_message.md)
+6. [Group Broadcast Message](./group_broadcast_message.md)
 
