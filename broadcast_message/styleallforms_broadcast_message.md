@@ -94,6 +94,5 @@ DEFINE CLASS form1 AS form
 
 ENDDEFINE
 ``` 
-
-
-[Full example](./src/styleallforms_broadcast_message.prg)
+               
+[Full example](./src/styleallfforms_broadcast_message.prg)
